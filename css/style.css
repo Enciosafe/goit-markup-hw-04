@@ -118,6 +118,15 @@ body {
   color: var(--primary-accent-color);
 }
 
+.contacts-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-nav:hover {
+  color: var(--primary-accent-color);
+}
+
 .nav-tel {
   font-size: 14px;
   font-weight: 500;
@@ -141,14 +150,6 @@ body {
 .icon-mail,
 .icon-tel {
   fill: currentColor;
-}
-
-.icon-mail:hover,
-.icon-mail:focus,
-.icon-tel:hover,
-.icon-tel:focus {
-  cursor: pointer;
-  color: var(--primary-accent-color);
 }
 
 .nav-icon-mail {
