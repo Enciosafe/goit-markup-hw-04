@@ -34,6 +34,11 @@ figure {
   padding: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -395,6 +400,50 @@ body {
 }
 /* КОНЕЦ НАША КОМАНДА */
 
+/* Постоянные клиенты */
+.clients {
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
+
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--hr-text-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.client-card {
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  fill: #afb1b8;
+}
+
+.client-item:hover,
+.client-card:hover {
+  fill: var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
+  cursor: pointer;
+}
+/* Конец постоянные клиенты */
+
 /* ПОДВАЛ */
 
 .footer {
@@ -439,6 +488,59 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
+  margin-bottom: 60px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.social-links-footer {
+  margin-left: 0;
+}
+
+.social-link-footer {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: #fff;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.social-link-footer:not(:last-child) {
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  color: #fff;
+  background-color: var(--primary-accent-color);
+  cursor: pointer;
+}
+.social-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* КОНЕЦ ПОДВАЛА*/
