@@ -53,7 +53,7 @@
           <!--HERO БЛОК-->
           <div class="container">
             <h1 class="hero-h">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-btn">Заказать услугу</button>
+            <button data-modal-open class="hero-btn">Заказать услугу</button>
           </div>
           
         </section>
@@ -102,9 +102,15 @@
         
         <h2 class="whatwedo">Чем мы занимаемся</h2>
         <ul class="list list-items">
-          <li><img class="list-item" src="./images/wwd1.png" alt="our work" /></li>
-          <li><img class="list-item" src="./images/wwd2.png" alt="our work" /></li>
-          <li><img class="list-item" src="./images/wwd3.png" alt="our work" /></li>
+          <li class="list-item"><img src="./images/wwd1.png" alt="our work" />
+          <p class="wedo-label">Десктопные приложения</p>
+          </li>
+          <li class="list-item"><img src="./images/wwd2.png" alt="our work" />
+          <p class="wedo-label">Мобильные приложения</p>
+          </li>
+          <li class="list-item"><img src="./images/wwd3.png" alt="our work" />
+          <p class="wedo-label">Дизайнерские решения</p>
+          </li>
         </ul>
       </section>
       <!--КОНЕЦ ЧЕМ МЫ ЗАНИМАЕМСЯ-->
@@ -332,5 +338,16 @@
       </div>
     </footer>
     <!--КОНЕЦ ПОДВАЛА-->
+
+    <!--МОДАЛЬНОЕ ОКНО-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" data-modal-close>X</button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      </div>
+      
+    </div>
+    <!--КОНЕЦ МОДАЛЬНОГО ОКНА-->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
